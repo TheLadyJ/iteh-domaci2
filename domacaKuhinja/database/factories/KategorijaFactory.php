@@ -14,7 +14,7 @@ class KategorijaFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'naziv_kategorije' => $this->faker->word()
         ];
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Kategorija;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ReceptFactory extends Factory
@@ -14,7 +15,9 @@ class ReceptFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'naziv_recepta'=>$this->faker->word(),
+            'opis_recepta'=>$this->faker->sentence(),
+            'kategorija_id' => Kategorija::factory(),
         ];
     }
 }
