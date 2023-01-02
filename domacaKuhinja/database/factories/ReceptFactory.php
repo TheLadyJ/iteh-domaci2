@@ -16,8 +16,8 @@ class ReceptFactory extends Factory
     public function definition()
     {
         return [
-            'naziv_recepta'=>$this->faker->word(),
-            'opis_recepta'=>$this->faker->sentence(),
+            'naziv_recepta'=>$this->faker->sentence(),
+            'opis_recepta'=>$this->faker->paragraph(),
             'kategorija_id' => Kategorija::factory(),
             'user_id' => User::factory(),
         ];
