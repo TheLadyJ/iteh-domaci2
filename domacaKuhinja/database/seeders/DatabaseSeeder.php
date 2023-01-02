@@ -32,24 +32,24 @@ class DatabaseSeeder extends Seeder
 
         Recept::factory(3)->create([
             'user_id'=>$user1->id,
-            'category_id'=>$kat1->id,
+            'kategorija_id'=>$kat1->id,
         ]);
         Recept::factory(2)->create([
             'user_id'=>$user1->id,
-            'category_id'=>$kat2->id,
+            'kategorija_id'=>$kat2->id,
         ]);
 
         Recept::factory(3)->create([
             'user_id'=>$user2->id,
-            'category_id'=>$kat3->id,
+            'kategorija_id'=>$kat3->id,
         ]);
         Recept::factory(1)->create([
             'user_id'=>$user2->id,
-            'category_id'=>$kat4->id,
+            'kategorija_id'=>$kat4->id,
         ]);
         Recept::factory(1)->create([
             'user_id'=>$user2->id,
-            'category_id'=>$kat5->id,
+            'kategorija_id'=>$kat5->id,
         ]);
     }
 }
