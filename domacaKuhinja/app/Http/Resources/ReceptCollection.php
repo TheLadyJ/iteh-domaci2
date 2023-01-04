@@ -12,7 +12,7 @@ class ReceptCollection extends ResourceCollection
      * @param  \Illuminate\Http\Request  $request
      * @return array|\Illuminate\Contracts\Support\Arrayable|\JsonSerializable
      */
-    public static $wrap = 'recepti';
+    public static $wrap = 'recepts';
     public function toArray($request)
     {
         return parent::toArray($request);
